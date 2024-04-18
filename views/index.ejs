@@ -8,7 +8,7 @@
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <p>Messages...</p>
-    <% locals.messages.forEach(message => { %>
+    <% messages.forEach(message => { %>
       <p>From <%= message.user %> &lpar;<%= message.added %>&rpar; </p>
       <p><%= message.text %></p>
       <% }) %>
